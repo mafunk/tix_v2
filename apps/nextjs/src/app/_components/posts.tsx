@@ -1,11 +1,10 @@
 "use client";
 
+import type { RouterOutputs } from "@tix/api";
 import { use } from "react";
-
-import type { RouterOutputs } from "@acme/api";
-import { CreatePostSchema } from "@acme/db/schema";
-import { cn } from "@acme/ui";
-import { Button } from "@acme/ui/button";
+import { CreatePostSchema } from "@tix/db/schema";
+import { cn } from "@tix/ui";
+import { Button } from "@tix/ui/button";
 import {
   Form,
   FormControl,
@@ -13,9 +12,9 @@ import {
   FormItem,
   FormMessage,
   useForm,
-} from "@acme/ui/form";
-import { Input } from "@acme/ui/input";
-import { toast } from "@acme/ui/toast";
+} from "@tix/ui/form";
+import { Input } from "@tix/ui/input";
+import { toast } from "@tix/ui/toast";
 
 import { api } from "~/trpc/react";
 

@@ -1,5 +1,5 @@
 {
-  "name": "@acme/expo",
+  "name": "@tix/expo",
   "version": "0.1.0",
   "private": true,
   "main": "expo-router/entry",
@@ -43,11 +43,11 @@
     "superjson": "2.2.1"
   },
   "devDependencies": {
-    "@acme/api": "workspace:*",
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tailwind-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
+    "@tix/api": "workspace:*",
+    "@tix/eslint-config": "workspace:*",
+    "@tix/prettier-config": "workspace:*",
+    "@tix/tailwind-config": "workspace:*",
+    "@tix/tsconfig": "workspace:*",
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/runtime": "^7.24.7",
@@ -58,5 +58,5 @@
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@tix/prettier-config"
 }
