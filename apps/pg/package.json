@@ -1,0 +1,9 @@
+{
+  "name": "@tix/pg",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "_dev": "docker run --name tix_pg -p 5432:5432 -e POSTGRES_PASSWORD=supersecret -e POSTGRES_USER=postgres -e POSTGRES_DB=postgres postgres",
+    "_dev:stop": "docker stop tix_pg && docker rm tix_pg"
+  }
+}
