@@ -286,6 +286,9 @@ importers:
       '@tix/db':
         specifier: workspace:*
         version: link:../db
+      '@tix/trpc':
+        specifier: workspace:*
+        version: link:../trpc
       '@tix/validators':
         specifier: workspace:*
         version: link:../validators
@@ -400,6 +403,43 @@ importers:
       drizzle-kit:
         specifier: ^0.22.6
         version: 0.22.8
+      eslint:
+        specifier: ^9.4.0
+        version: 9.6.0
+      prettier:
+        specifier: ^3.3.1
+        version: 3.3.2
+      typescript:
+        specifier: ^5.4.5
+        version: 5.5.2
+
+  packages/trpc:
+    dependencies:
+      '@tix/auth':
+        specifier: workspace:*
+        version: link:../auth
+      '@tix/db':
+        specifier: workspace:*
+        version: link:../db
+      '@trpc/server':
+        specifier: 11.0.0-rc.364
+        version: 11.0.0-rc.364
+      superjson:
+        specifier: 2.2.1
+        version: 2.2.1
+      zod:
+        specifier: ^3.23.8
+        version: 3.23.8
+    devDependencies:
+      '@tix/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint
+      '@tix/prettier-config':
+        specifier: workspace:*
+        version: link:../../tooling/prettier
+      '@tix/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/typescript
       eslint:
         specifier: ^9.4.0
         version: 9.6.0

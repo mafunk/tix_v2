@@ -1,9 +1,8 @@
 import type { TRPCRouterRecord } from "@trpc/server";
 import { desc, eq } from "@tix/db";
 import { CreatePostSchema, Post } from "@tix/db/schema";
+import { protectedProcedure, publicProcedure } from "@tix/trpc";
 import { z } from "zod";
-
-import { protectedProcedure, publicProcedure } from "../trpc";
 
 export const postRouter = {
   all: publicProcedure.query(({ ctx }) => {

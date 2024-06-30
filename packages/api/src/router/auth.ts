@@ -1,7 +1,6 @@
 import type { TRPCRouterRecord } from "@trpc/server";
 import { invalidateSessionToken } from "@tix/auth";
-
-import { protectedProcedure, publicProcedure } from "../trpc";
+import { protectedProcedure, publicProcedure } from "@tix/trpc";
 
 export const authRouter = {
   getSession: publicProcedure.query(({ ctx }) => {
